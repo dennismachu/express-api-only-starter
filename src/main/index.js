@@ -1,8 +1,8 @@
 require('dotenv').config();
 // import configFile from './config/configFile'
-import {database} from './configs/database'
+import {database} from './config/database'
 import {app} from './server'
-import {keys} from './configs/keys'
+import {keys} from './config/keys'
 
 if (process.env.NODE_ENV === 'production') {
   const port = keys.PORT_PRODUCTION || 8080
