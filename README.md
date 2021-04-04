@@ -100,8 +100,11 @@ npm i -D @babel/core @babel/cli @babel/node @babel/preset-env @babel/plugin-tran
 # Configuration for Babel
 
 // .babelrc
+
+```
 {
 "presets": ["@babel/preset-env"],
 "plugins": [
 ["@babel/transform-runtime"]
 ]
+```
