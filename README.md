@@ -87,6 +87,13 @@ Socket.io - Enables real-time bidirectional event-based communication.
 
 axios - Promise based HTTP client (works in the browser too).
 
+###### HTTP SECURITY
+express-mongo-sanitize - Use to prevent NoSql injections.
+helmet - Adds extra headers to protect the routes.
+xss-clean - To prevent a harmful script being sent with the POST request.
+hpp - To prevent HTTP Parameter Pollution.
+express-rate-limit - This is used for api rate limiting.
+
 # Install the dependencies
 
 ```
