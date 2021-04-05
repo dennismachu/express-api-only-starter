@@ -97,7 +97,8 @@ express-rate-limit - This is used for api rate limiting.
 # Install the dependencies
 
 ```
-npm i express mongoose body-parser cors dotenv bcryptjs pm2 jsonwebtoken axios helmet morgan chalk @hapi/joi multer passport faker nodemailer joi moment mongoose-paginate-v2 eventemitter3 agenda
+npm i express mongoose body-parser cors dotenv bcryptjs pm2 jsonwebtoken axios helmet morgan chalk @hapi/joi multer passport faker nodemailer joi moment mongoose-paginate-v2 eventemitter3 agenda express-mongo-sanitize 
+xss-clean hpp express-rate-limit
 ```
 
 ```
