@@ -45,7 +45,7 @@ router.get('/',(req, res, next) =>{
 // import {route name} from '{route path}'
 // {route name}(router)
 
-// import noteRoutes from './notes/notesRoutes'
-// noteRoutes(router)
+import noteRoutes from './app/notes/notesRoute'
+noteRoutes(router)
 
 export {app}
