@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./build/test || true",
+    "test": "npm run build && nyc --clean --report lcovonly mocha ./build/test --timeout 10000 --exit",
     "build": "npm run clean && npm run build-babel",
     "clean": "rm -rf build && mkdir build",
     "build-babel": "babel -d ./build ./src -s",
@@ -51,8 +51,11 @@
     "chai-http": "^4.3.0",
     "faker": "^5.1.0",
     "mocha": "^8.3.2",
-    "newman": "^5.2.2",
+    "newman": "^5.1.2",
     "nodemon": "^2.0.7",
-    "rimraf": "^3.0.2"
+    "nyc": "^15.1.0",
+    "rimraf": "^3.0.2",
+    "sinon": "^10.0.0",
+    "supertest": "^6.1.3"
   }
 }

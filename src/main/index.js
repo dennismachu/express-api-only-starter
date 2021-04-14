@@ -12,7 +12,7 @@ const port = keys.PORT_DEVELOPMENT || 3030
 /**
  * Connect to the Database
  */
-database()
+// database()
 module.exports = app.listen(port, async () => {
   await database()
   console.log(`Service listening at http://localhost:${port}`)
