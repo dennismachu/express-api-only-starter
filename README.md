@@ -94,10 +94,13 @@ xss-clean - To prevent a harmful script being sent with the POST request.
 hpp - To prevent HTTP Parameter Pollution.
 express-rate-limit - This is used for api rate limiting.
 
+###### Logger
+Winston
+
 # Install the dependencies
 
 ```
-npm i express mongoose body-parser cors dotenv bcryptjs pm2 jsonwebtoken axios helmet morgan chalk @hapi/joi multer passport faker nodemailer joi moment mongoose-paginate-v2 eventemitter3 agenda
+npm i express mongoose body-parser cors dotenv bcryptjs pm2 jsonwebtoken axios helmet morgan chalk @hapi/joi multer passport faker nodemailer joi moment mongoose-paginate-v2 eventemitter3 agenda winston
 ```
 
 ```

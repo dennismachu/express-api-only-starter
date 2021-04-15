@@ -3,7 +3,7 @@ require('dotenv').config();
 import mongoose from 'mongoose'
 import chalk from 'chalk'
 import {keys} from './keys'
-
+import logger from '../logger/index'
 
 const connected = chalk.bold.cyan;
 const error = chalk.bold.yellow;
@@ -25,10 +25,12 @@ export const database = ()=> {
 	})
 
   mongoose.connection.on('connected', function() {
+	  logger.info('Mongoose default connection is open')
 		console.log(connected('Mongoose default connection is open'));
 	});
 
 	mongoose.connection.on('error', function(err) {
+
 		console.log(
 			error('Mongoose default connection has occured ' + err + ' error')
 		);
