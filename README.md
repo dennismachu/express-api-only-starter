@@ -88,6 +88,7 @@ Socket.io - Enables real-time bidirectional event-based communication.
 axios - Promise based HTTP client (works in the browser too).
 
 ###### HTTP SECURITY
+
 express-mongo-sanitize - Use to prevent NoSql injections.
 helmet - Adds extra headers to protect the routes.
 xss-clean - To prevent a harmful script being sent with the POST request.
@@ -97,11 +98,11 @@ express-rate-limit - This is used for api rate limiting.
 # Install the dependencies
 
 ```
-npm i express mongoose body-parser cors dotenv bcryptjs pm2 jsonwebtoken axios helmet morgan chalk @hapi/joi multer passport faker nodemailer joi moment mongoose-paginate-v2 eventemitter3 agenda
+npm i express mongoose body-parser cors dotenv bcryptjs pm2 jsonwebtoken axios helmet morgan chalk @hapi/joi multer passport faker nodemailer joi moment mongoose-paginate-v2 eventemitter3 agenda xss-clean express-mongo-sanitize express-rate-limit
 ```
 
 ```
-npm i -D @babel/core @babel/cli @babel/node @babel/preset-env @babel/plugin-transform-runtime @babel/runtime @babel/polyfill nodemon chai chai-http mocha newman faker rimraf
+npm i -D @babel/core @babel/cli @babel/node @babel/preset-env @babel/plugin-transform-runtime @babel/runtime @babel/polyfill nodemon chai chai-http mocha newman faker rimraf sinon supertest nyc
 ```
 
 # Configuration for Babel
