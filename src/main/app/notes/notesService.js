@@ -3,7 +3,6 @@
  * A service object implements the user’s interactions with the application. 
  * It contains business logic that describe the connections with your domain objects.
  */
-
  import Notes from './notesModel.js'
 
  // Create
@@ -13,7 +12,9 @@
          title: title,
          description: description
      })
+     logger.info()
     return await note.save()
+    
     
  }
  
