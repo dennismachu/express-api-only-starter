@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run build && nyc --clean --report lcovonly mocha ./build/test --timeout 10000 --exit",
+    "test": "nyc --clean --report lcovonly mocha ./build/test --timeout 10000 --exit",
     "build": "npm run clean && npm run build-babel",
     "clean": "rm -rf build && mkdir build",
     "build-babel": "babel -d ./build ./src -s",
-    "dev": "nodemon --exec babel-node src/main/index.js"
+    "dev": "nodemon --exec babel-node src/main/index.js",
+    "dev:test": "mocha ./build/test --timeout 10000 --exit"
   },
   "keywords": [],
   "author": "",
