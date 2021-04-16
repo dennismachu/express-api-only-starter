@@ -9,7 +9,7 @@
     "clean": "rm -rf build && mkdir build",
     "build-babel": "babel -d ./build ./src -s",
     "dev": "nodemon --exec babel-node src/main/index.js",
-    "dev:test": "npm run build && nyc --clean --report lcovonly mocha ./build/test --timeout 10000 --exit"
+    "dev:test": "mocha ./build/test --timeout 10000 --exit"
   },
   "keywords": [],
   "author": "",
