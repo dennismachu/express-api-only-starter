@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nyc --clean --report lcovonly mocha ./build/test --timeout 10000 --exit",
+    "test": "nyc --clean --report lcovonly mocha ./build/test --timeout 900000 --exit",
     "build": "npm run clean && npm run build-babel",
     "clean": "rm -rf build && mkdir build",
     "build-babel": "babel -d ./build ./src -s",
