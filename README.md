@@ -1,3 +1,5 @@
+[![Build Status](https://www.travis-ci.com/dennismachu/express-api-only-starter.svg?branch=main)](https://www.travis-ci.com/dennismachu/express-api-only-starter)
+
 # express-api-only-starter
 
 An Express Server Node.js API only boilerplate with Mongo DB
