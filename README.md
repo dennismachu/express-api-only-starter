@@ -71,6 +71,12 @@ speakingurl - Generate a slug from a string with transliteration.
 
 Moment.js - Parse, validate, manipulate, and display dates.
 
+###### Docker
+
+Install docker.
+Install docker-compose.
+Run `docker-compose up` to provision server with redis and mongo instances.
+
 ###### Math
 
 mathjs - An extensive math library.
