@@ -6,3 +6,6 @@ script:
   - npm run build
   - echo "Running Test"
   - npm run test
+
+notifications:
+  slack: wonchunii:uqGY3TynsPDT1Z6LprMwBJ8P
