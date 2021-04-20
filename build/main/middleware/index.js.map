@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../../src/main/middleware/index.js"],"names":[],"mappings":"AAAA;AACA;AACA","sourcesContent":["/**\n * Middleware provide a convenient mechanism for inspecting and filtering HTTP requests entering your application.\n */"],"file":"index.js"}

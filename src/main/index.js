@@ -1,5 +1,4 @@
-require('dotenv').config();
-// import configFile from './config/configFile'
+import 'dotenv/config'
 import {database} from './config/database'
 import {app} from './server'
 import {keys} from './config/keys'

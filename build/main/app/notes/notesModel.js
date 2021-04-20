@@ -12,8 +12,8 @@ var _mongoose = _interopRequireDefault(require("mongoose"));
 var _mongoosePaginateV = _interopRequireDefault(require("mongoose-paginate-v2"));
 
 /**
- * The Models files contains all of your schema. 
- * Each database table has a corresponding "Model" which is used to interact with that table. 
+ * The Models files contains all of your schema.
+ * Each database table has a corresponding "Model" which is used to interact with that table.
  * Models allow you to query for data in your tables, as well as insert new records into the table.
  */
 var Schema = _mongoose["default"].Schema;

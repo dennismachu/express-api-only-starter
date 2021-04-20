@@ -8,9 +8,11 @@ var _asyncToGenerator2 = _interopRequireDefault(require("@babel/runtime/helpers/
 
 var _notesModel = _interopRequireDefault(require("./notesModel.js"));
 
+var _index = _interopRequireDefault(require("../../logger/index"));
+
 /**
- * Contains module(notes) services. 
- * A service object implements the user’s interactions with the application. 
+ * Contains module(notes) services.
+ * A service object implements the user’s interactions with the application.
  * It contains business logic that describe the connections with your domain objects.
  */
 // Create
@@ -26,13 +28,16 @@ var createNotes = /*#__PURE__*/function () {
               title: title,
               description: description
             });
-            _context.next = 3;
+
+            _index["default"].info();
+
+            _context.next = 4;
             return note.save();
 
-          case 3:
+          case 4:
             return _context.abrupt("return", _context.sent);
 
-          case 4:
+          case 5:
           case "end":
             return _context.stop();
         }

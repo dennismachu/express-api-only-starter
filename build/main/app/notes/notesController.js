@@ -170,8 +170,8 @@ var update = /*#__PURE__*/function () {
 
           case 8:
             noteData = {
-              title: _joi["default"].attempt(req.body.title, _joi["default"].string().min(3).max(30).required(), "Title Error:"),
-              description: _joi["default"].attempt(req.body.description, _joi["default"].string(), "Description Error:")
+              title: _joi["default"].attempt(req.body.title, _joi["default"].string().min(3).max(30).required(), 'Title Error:'),
+              description: _joi["default"].attempt(req.body.description, _joi["default"].string(), 'Description Error:')
             };
             _context4.next = 11;
             return (0, _notesService.updateNote)(noteID, noteData);
@@ -220,13 +220,13 @@ var remove = /*#__PURE__*/function () {
               break;
             }
 
-            message = "Note not found";
+            message = 'Note not found';
             return _context5.abrupt("return", _apiResponse["default"].notFoundResponse(res, message));
 
           case 7:
             _context5.next = 9;
             return (0, _notesService.removeNotes)(req.params.id).then(function (result) {
-              var message = "Note Deleted";
+              var message = 'Note Deleted';
               return _apiResponse["default"].successResponse(res, message);
             })["catch"](function (err) {
               return _apiResponse["default"].errorResponse(res, err.errors);
