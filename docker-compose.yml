@@ -1,4 +1,4 @@
-version: "3.7"
+version: '3.7'
 
 services:
   web:
@@ -9,23 +9,23 @@ services:
       - 3000:3000
     env_file:
       - .env
-    environment:
-      - DB_DEV_URL=mongodb://db:27017/test
-      - REDIS_URL=redis://redis:6379/0
-    depends_on:
-      - db
-      - redis
-  redis:
-    container_name: redis
-    image: redis:6-alpine
+#     environment:
+#       - DB_DEV_URL=mongodb://db:27017/test
+#       - REDIS_URL=redis://redis:6379/0
+#     depends_on:
+#       - db
+#       - redis
+#   redis:
+#     container_name: redis
+#     image: redis:6-alpine
 
-  db:
-    image: mongo
-    container_name: db
-    volumes:
-      - mongo_data:/data/db
-    ports:
-      - 27017:27017
+#   db:
+#     image: mongo
+#     container_name: db
+#     volumes:
+#       - mongo_data:/data/db
+#     ports:
+#       - 27017:27017
 
-volumes:
-  mongo_data:
+# volumes:
+#   mongo_data:
