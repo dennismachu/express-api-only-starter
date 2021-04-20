@@ -1,0 +1,46 @@
+components:
+  schemas:
+    UserCreateObject:
+      type: object
+      description:
+        This represents the object structure expected when making a request to
+        create a User instance.
+      properties:
+        username:
+          type: string
+          description: This field represents the username of the User.
+          required: true
+          example: KofiOneZed
+        country:
+          type: string
+          description: This is the particular country the user is from.
+          required: true
+          example: Ghana
+    UserObject:
+      type: object
+      description: A representation of the User model.
+      properties:
+        username:
+          type: string
+          description: This field represents the username of the User.
+          required: true
+          example: KofiOneZed
+        uid:
+          type: string
+          description:
+            This is a unique id auto-generated and is the primary key of the
+            User.
+          example: 0000-d000-0000-a0000
+        country:
+          type: string
+          description: This is the particular country the user is from.
+          required: true
+          example: Ghana
+        createdAt:
+          type: string
+          description: The record of time at which the User was created.
+          required: false
+        updatedAt:
+          type: string
+          description: The record of time at which the User was updated.
+          required: false

@@ -5,8 +5,12 @@ import mongoSanitize from 'express-mongo-sanitize'
 import helmet from 'helmet'
 import xss from 'xss-clean'
 import hpp from 'hpp'
-import fs from 'fs'
 import path from 'path'
+
+import swaggerUI from 'swagger-ui-express'
+import swaggerJSDoc from 'swagger-jsdoc'
+
+import {specOptions, customOptions} from './config/docs/swagger-options'
 
 const app = express()
 
@@ -20,6 +24,7 @@ app.use(mongoSanitize()) //Use for security to prevent NoSql injections
 app.use(helmet()) //Adds extra headers to protect the routes
 app.use(xss()) //To prevent a harmful script being sent with the POST request
 app.use(hpp()) //To prevent HTTP Parameter Pollution.
+app.use(express.static(path.join(__dirname, 'config/docs/assets')))
 
 /**
  * Initiate the Routes
@@ -49,5 +54,8 @@ router.get('/', (req, res, next) => {
 
 import noteRoutes from './app/notes/notesRoute'
 noteRoutes(router)
+
+const docs = swaggerJSDoc(specOptions)
+app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(docs, customOptions))
 
 export {app}
