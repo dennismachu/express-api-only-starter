@@ -14,6 +14,7 @@ const DB_URL =
     ? keys.DB_URL_PRODUCTION
     : keys.DB_URL_DEVELOPMENT
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const database = () => {
   mongoose.connect(DB_URL, {
     useCreateIndex: true,
