@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../../src/main/events/index.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA","sourcesContent":["/**\n * The Events directory houses event functions. \n * Events may be used to alert other parts of your application \n * that a given action has occurred, \n * providing a great deal of flexibility and decoupling.\n */"],"file":"index.js"}
