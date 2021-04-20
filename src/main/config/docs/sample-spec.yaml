@@ -1,0 +1,34 @@
+/create-user:
+  post:
+    tags:
+      - Route Tag 1
+    description: Creates a new user.
+    requestBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/UserCreateObject'
+    responses:
+      '201':
+        description: A new user has been created.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserObject'
+      '422':
+        description:
+          The username already exists. A new username should be chosen.
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                message:
+                  type: string
+                  description: Gives a summary of the error.
+                  example:
+                    This username is already taken. Try again with another
+                    username.
+      '500':
+        description: Unexpected error.

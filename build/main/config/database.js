@@ -21,7 +21,7 @@ var connected = _chalk["default"].bold.cyan;
 var error = _chalk["default"].bold.yellow;
 var disconnected = _chalk["default"].bold.red;
 var termination = _chalk["default"].bold.magenta;
-var DB_URL = process.env.NODE_ENV === 'production' ? _keys.keys.DB_URL_PRODUCTION : _keys.keys.DB_URL_DEVELOPMENT;
+var DB_URL = process.env.NODE_ENV === 'production' ? _keys.keys.DB_URL_PRODUCTION : _keys.keys.DB_URL_DEVELOPMENT; // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 
 var database = function database() {
   _mongoose["default"].connect(DB_URL, {

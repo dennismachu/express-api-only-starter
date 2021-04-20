@@ -106,3 +106,4 @@ www
 .tern-port
 
 package-lock.json
+build/
